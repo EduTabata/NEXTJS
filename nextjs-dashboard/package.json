@@ -1,7 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "next build",
+  "build": "tsc",               // Se for TypeScript
+  "build": "vite build",         // Se for Vite
+  "build": "next build",         // Se for Next.js
+  "start": "node server.js"      // Se for um servidor Node.js simples
     "dev": "next dev --turbopack",
     "start": "next start"
   },
